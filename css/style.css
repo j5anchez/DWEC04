@@ -1,0 +1,104 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: #202124;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202124;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+}
+
+.paisesWrapper {
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+.lista-pais {
+    display: flex;
+}
+
+.country-flag {
+    width: auto;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.arrow-container {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.infoPaisModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333333;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#continente a {
+    display: inline-block;
+    width: calc(100% / 6);
+    height: auto;
+    max-height: 150px;
+    margin: 5px;
+    background-size: cover;
+}
+
+#continente a[data-value="Africa"] {
+    background-image: url('../img/africa.gif');
+}
+
+#continente a[data-value="Americas"] {
+    background-image: url('../img/america.gif');
+}
+
+#continente a[data-value="Asia"] {
+    background-image: url('../img/asia.gif');
+}
+
+#continente a[data-value="Europe"] {
+    background-image: url('../img/europa.gif');
+}
+
+#continente a[data-value="Oceania"] {
+    background-image: url('../img/oceania.gif');
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países del Mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1 class="display-4">Países del Mundo</h1>
+    <div class="row mt-4">
+        <div class="col">
+            <h5>Filtro por continente</h5>
+            <div id="continente" class="btn-group" role="group">
+                <a href="#" class="btn btn-secondary" data-value="">Todos los países</a>
+                <a href="#" class="btn btn-secondary" data-value="Africa">África</a>
+                <a href="#" class="btn btn-secondary" data-value="Americas">América</a>
+                <a href="#" class="btn btn-secondary" data-value="Asia">Asia</a>
+                <a href="#" class="btn btn-secondary" data-value="Europe">Europa</a>
+                <a href="#" class="btn btn-secondary" data-value="Oceania">Oceanía</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">
+            <h5>Filtro por idioma</h5>
+            <div id="lenguajes" class="btn-group" role="group">
+                <a href="#" class="btn btn-secondary" data-value="">Todos los idiomas</a>
+                <a href="#" class="btn btn-secondary" data-value="English">Inglés</a>
+                <a href="#" class="btn btn-secondary" data-value="Spanish">Español</a>
+                <a href="#" class="btn btn-secondary" data-value="French">Francés</a>
+                <a href="#" class="btn btn-secondary" data-value="Chinese">Chino</a>
+                <a href="#" class="btn btn-secondary" data-value="Arabic">Árabe</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col">
+            <h5>Criterio de ordenación</h5>
+            <div id="ordenCriterio" class="btn-group" role="group">
+                <a href="#" class="btn btn-secondary" data-value="population">Ordenar por población</a>
+                <a href="#" class="btn btn-secondary" data-value="name">Ordenar alfabéticamente</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="prevPage" class="arrow-container arrow">❮</div>
+        <div class="paisesWrapper">
+            <div id="listaPaises" class="lista-pais"></div>
+        </div>
+        <div id="nextPage" class="arrow-container arrow">❯</div>
+    </div>
+    <h2>Filtros:</h2>
+    <ul id="listaFiltros"></ul>
+    <h3>Últimos países visitados:</h3>
+    <ul id="listaUltimosVisitados"></ul>
+    <div id="modal" class="modal">
+        <div id="infoPais" class="infoPaisModal"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
